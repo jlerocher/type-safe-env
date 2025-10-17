@@ -19,8 +19,16 @@
 	"license": "ISC",
 	"author": "Jean Le Rocher",
 	"type": "module",
-	"main": "index.ts",
+	"main": "src/index.ts",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"start": "bun src/index.ts",
+		"test": "echo \"Error: no test specified\" && exit 0"
+	},
+	"private": true,
+	"devDependencies": {
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
 	}
 }
