@@ -1,0 +1,26 @@
+{
+  "name": "type-safe-env",
+  "version": "1.0.0",
+  "description": "Access your .env variables with ease",
+  "keywords": [
+    "env",
+    "type-safe",
+    "parser",
+    "variables"
+  ],
+  "homepage": "https://github.com/jlerocher/type-safe-env#readme",
+  "bugs": {
+    "url": "https://github.com/jlerocher/type-safe-env/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlerocher/type-safe-env.git"
+  },
+  "license": "ISC",
+  "author": "Jean Le Rocher",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
