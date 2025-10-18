@@ -1,49 +1,49 @@
 {
   "name": "@jlerocher/ts-env",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publishConfig": {
     "access": "public"
   },
-	"description": "A lightweight, zero-dependency library to load, validate, and safely use environment variables in TypeScript — with full type inference and runtime validation.",
-	"license": "MIT",
-	"author": "Jean Le Rocher <jlerocher@gmail.com>",
-	"type": "module",
-	"keywords": [
-		"env",
-		"type-safe",
-		"parser",
-		"variables"
-	],
-	"homepage": "https://github.com/jlerocher/type-safe-env#readme",
-	"bugs": {
-		"url": "https://github.com/jlerocher/type-safe-env/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/jlerocher/type-safe-env.git"
-	},
-	"main": "dist/index.js",
-	"types": "dist/index.d.ts",
-	"files": [
-		"dist"
-	],
-	"scripts": {
-		"build": "tsc",
-		"dev": "bun --watch src/index.ts",
-		"start": "bun src/index.ts",
-		"test": "bun test"
-	},
-	"devDependencies": {
-		"@types/bun": "latest",
-		"semantic-release": "^24.0.0",
-		"@semantic-release/commit-analyzer": "^13.0.0",
-		"@semantic-release/release-notes-generator": "^14.0.0",
-		"@semantic-release/npm": "^12.0.1",
-		"@semantic-release/github": "^10.1.3",
-		"@semantic-release/git": "^10.0.1",
-		"conventional-changelog-conventionalcommits": "^8.0.0"
-	},
-	"peerDependencies": {
-		"typescript": "^5"
-	}
+  "description": "A lightweight, zero-dependency library to load, validate, and safely use environment variables in TypeScript — with full type inference and runtime validation.",
+  "license": "MIT",
+  "author": "Jean Le Rocher <jlerocher@gmail.com>",
+  "type": "module",
+  "keywords": [
+    "env",
+    "type-safe",
+    "parser",
+    "variables"
+  ],
+  "homepage": "https://github.com/jlerocher/type-safe-env#readme",
+  "bugs": {
+    "url": "https://github.com/jlerocher/type-safe-env/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlerocher/type-safe-env.git"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "bun --watch src/index.ts",
+    "start": "bun src/index.ts",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "semantic-release": "^24.0.0",
+    "@semantic-release/commit-analyzer": "^13.0.0",
+    "@semantic-release/release-notes-generator": "^14.0.0",
+    "@semantic-release/npm": "^12.0.1",
+    "@semantic-release/github": "^10.1.3",
+    "@semantic-release/git": "^10.0.1",
+    "conventional-changelog-conventionalcommits": "^8.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
 }
