@@ -1,8 +1,7 @@
-import { parseEnv } from "./lib/parser";
-import { TsEnv } from "./lib/ts-env";
+import { parseEnv, typesDetector } from "./lib/parser";
 
 const env = parseEnv();
 
-TsEnv.generateTypes(env);
+const envWithTypes = typesDetector(env);
 
-console.log("Type definition file generated at src/types.d.ts");
+console.log(envWithTypes);

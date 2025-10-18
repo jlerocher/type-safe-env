@@ -21,8 +21,9 @@
 	},
 	"main": "src/index.ts",
 	"scripts": {
+		"dev": "bun --watch src/index.ts",
 		"start": "bun src/index.ts",
-		"test": "echo \"Error: no test specified\" && exit 0"
+		"test": "bun test"
 	},
 	"private": true,
 	"devDependencies": {

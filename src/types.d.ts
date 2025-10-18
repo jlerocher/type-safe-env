@@ -1,6 +1,6 @@
 export type Env = {
-  DB_HOST: string;
-  DB_USER: string;
-  DB_PASS: string;
+  DATABASE_URL: string;
+  APP_NAME: string;
+  API_PORT: string;
   API_KEY: string;
 };

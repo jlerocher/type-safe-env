@@ -33,3 +33,32 @@ export function parseEnv(
 		throw error;
 	}
 }
+
+export const typesDetector = (
+	env: Record<string, string>,
+): Record<string, "string" | "number" | "boolean"> => {
+	const types: Record<string, "string" | "number" | "boolean"> = {};
+
+	for (const key in env) {
+		const value = env[key];
+		const processedValue = value ? value.replace(/^['"]|['"]$/g, "") : "";
+
+		if (
+			processedValue &&
+			(processedValue.toLowerCase() === "true" ||
+				processedValue.toLowerCase() === "false")
+		) {
+			types[key] = "boolean";
+		} else if (
+			processedValue &&
+			processedValue.trim() !== "" &&
+			!Number.isNaN(Number(processedValue))
+		) {
+			types[key] = "number";
+		} else {
+			types[key] = "string";
+		}
+	}
+
+	return types;
+};
