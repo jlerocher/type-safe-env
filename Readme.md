@@ -1,6 +1,6 @@
-# 🧩 type-safe-env
+# 🧩 ts-env
 
-[![npm version](https://img.shields.io/npm/v/type-safe-env.svg)](https://www.npmjs.com/package/type-safe-env)
+[![npm version](https://img.shields.io/npm/v/ts-env.svg)](https://www.npmjs.com/package/ts-env)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Publish to npm](https://github.com/jlerocher/type-safe-env/actions/workflows/publish.yml/badge.svg)](https://github.com/jlerocher/type-safe-env/actions/workflows/publish.yml)
 
@@ -8,7 +8,7 @@ A lightweight, zero-dependency library to load, validate, and safely use environ
 
 ### 🧠 Why
 
-Working with `process.env` is unsafe — everything is a string, values can be missing, and bugs often appear too late in production. **type-safe-env** ensures your environment configuration is **predictable, validated, and fully typed** from the start.
+Working with `process.env` is unsafe — everything is a string, values can be missing, and bugs often appear too late in production. **ts-env** ensures your environment configuration is **predictable, validated, and fully typed** from the start.
 
 ---
 
@@ -25,7 +25,7 @@ Working with `process.env` is unsafe — everything is a string, values can be m
 ### 🧑‍💻 Installation
 
 ```bash
-npm install type-safe-env
+npm install ts-env
 ```
 
 ---
@@ -45,7 +45,7 @@ npm install type-safe-env
 2.  **Instantiate `TsEnv`** in your project's entry point (e.g., `index.ts`):
 
     ```typescript
-    import createEnv from 'type-safe-env';
+    import createEnv from 'ts-env';
 
     // This will load the .env file, validate the variables,
     // and generate a `src/types.d.ts` file.

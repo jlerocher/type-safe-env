@@ -1,5 +1,5 @@
 {
-	"name": "type-safe-env",
+	"name": "ts-env",
 	"version": "1.0.0",
 	"description": "A lightweight, zero-dependency library to load, validate, and safely use environment variables in TypeScript — with full type inference and runtime validation.",
 	"license": "MIT",
