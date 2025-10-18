@@ -19,14 +19,17 @@
 		"type": "git",
 		"url": "git+https://github.com/jlerocher/type-safe-env.git"
 	},
-	"main": "src/index.ts",
-	"scripts": {
-		"dev": "bun --watch src/index.ts",
-		"start": "bun src/index.ts",
-		"test": "bun test"
-	},
-	"private": true,
-	"devDependencies": {
+	  "main": "dist/index.js",
+	  "types": "dist/index.d.ts",
+	  "files": [
+	    "dist"
+	  ],
+	  "scripts": {
+	    "build": "tsc",
+	    "dev": "bun --watch src/index.ts",
+	    "start": "bun src/index.ts",
+	    "test": "bun test"
+	  },	"devDependencies": {
 		"@types/bun": "latest"
 	},
 	"peerDependencies": {

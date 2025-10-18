@@ -1,4 +1,14 @@
-import { TsEnv } from "./lib/ts-env";
+import { TsEnv, type TsEnvOptions } from "./lib/ts-env";
 
-const tsEnv = new TsEnv();
-console.log(tsEnv.get("API_PORT"));
+/**
+ * Creates a new instance of TsEnv.
+ *
+ * @param options - Configuration options for TsEnv.
+ * @returns A new TsEnv instance.
+ */
+function createEnv(options?: TsEnvOptions): TsEnv {
+	return new TsEnv(options);
+}
+
+export { TsEnv, type TsEnvOptions, createEnv };
+export default createEnv;
