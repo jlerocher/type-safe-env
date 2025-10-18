@@ -1,8 +1,9 @@
 {
-	  "name": "@jlerocher/ts-env",
-	  "publishConfig": {
-	    "access": "public"
-	  },	"version": "1.0.0",
+  "name": "@jlerocher/ts-env",
+  "version": "1.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
 	"description": "A lightweight, zero-dependency library to load, validate, and safely use environment variables in TypeScript — with full type inference and runtime validation.",
 	"license": "MIT",
 	"author": "Jean Le Rocher <jlerocher@gmail.com>",
