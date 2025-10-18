@@ -18,7 +18,7 @@ export function parseEnv(
 			const trimmedLine = line.trim();
 			if (trimmedLine && !trimmedLine.startsWith("#")) {
 				const [key, value] = trimmedLine.split("=");
-				if (key && value) {
+				if (key && value !== undefined) {
 					env[key.trim()] = value.trim();
 				}
 			}
