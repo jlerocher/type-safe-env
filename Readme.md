@@ -2,6 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/type-safe-env.svg)](https://www.npmjs.com/package/type-safe-env)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Publish to npm](https://github.com/jlerocher/type-safe-env/actions/workflows/publish.yml/badge.svg)](https://github.com/jlerocher/type-safe-env/actions/workflows/publish.yml)
 
 A lightweight, zero-dependency library to load, validate, and safely use environment variables in TypeScript — with full type inference and runtime validation.
 
